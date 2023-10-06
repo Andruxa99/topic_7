@@ -5,3 +5,8 @@ for number in numbers:
     num = int(number)
     if num > 100 and (num % 5 == 0 or num % 7 == 0):
         print(num, end=" ")
+
+# 1. Нужны аннотации
+# 2. Вывод не соответствует ожидаемому
+
+# В целом хорошая работа!
