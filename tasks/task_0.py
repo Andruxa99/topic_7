@@ -1,11 +1,11 @@
 # Способ 1-ый
 print('Решение с использованием цикла for:')
-for i in range(11):
+for i in range(1, 11):
     print(i)
 
 # Способ 2-ой
 print('Решение с использованием цикла while:')
-i = 0
+i = 1
 while i <= 10:
     print(i)
     i += 1
