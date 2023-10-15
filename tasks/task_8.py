@@ -1,14 +1,11 @@
-start = int(input("Введите начало диапазона: "))
-end = int(input("Введите конец диапазона: "))
+start: int = int(input("Введите начало диапазона: "))
+end: int = int(input("Введите конец диапазона: "))
+
+if start > end:
+    start, end = end, start
 
 for number in range(start, end + 1):
-    if start > end:
-        start, end = end, start
-
-    if start == end:
-        if start % 2 == 0:
-            print(start)
-        else:
-            print(0)
     if number % 2 == 0:
         print(number)
+    elif start == end:
+        print(0)
