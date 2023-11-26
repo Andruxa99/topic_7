@@ -12,4 +12,10 @@ while number > 1:
     else:
         divider += 1
 
-print(" ".join(map(str, factors)))
+# Можно было сразу вывести в цикле
+# print(" ".join(map(str, factors)))
+
+# Или использовать оператор распаковки *
+print(*factors)
+
+# Хорошее решение!
