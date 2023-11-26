@@ -1,21 +1,12 @@
-# Способ 1-ый
+# Решение через for
 print("Решение с использованием цикла for:")
-for num in range(-10, 0):
-    print(num)
+for i in range(-10, 0):
+    print(i)
 
-# Способ 2-ой
+# Решение через while
+
 print("Решение с использованием цикла while:")
-num = -10
-while num <= -1:
-    print(num)
-    num += 1
-print()
-
-# Вывод в одну строку
-# Способ 2-ой
-print("Решение с использованием цикла while:", end=" ")
-num = -10
-while num <= -1:
-    print(num, end=" ")
-    num += 1
-print()
+count: int = -10
+while count <= -1:
+    print(count)
+    count += 1

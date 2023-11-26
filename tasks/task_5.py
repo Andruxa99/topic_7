@@ -1,12 +1,11 @@
 number: int = int(input("Введите число: "))
 
-if number < 0:
+factorial: int = 1
+
+if number <= 1:
     print("Факториал определен только для натуральных чисел")
 else:
-    factorial: int = 1
-    num: int = 1
-    while num <= number:
-        factorial *= num
-        num += 1
+    for i in range(2, number + 1):
+        factorial *= i
     print("Факториал числа", number, "равен", factorial)
 

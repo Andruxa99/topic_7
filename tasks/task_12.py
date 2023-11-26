@@ -1,25 +1,25 @@
 # Решение через цикл for
-
-n = int(input())
-
-# for i in range(n):
-#     for j in range(n - i - 1):
+number: int = int(input("Введите целое положительное число: "))
+#
+# for i in range(number):
+#     for j in range(number - i - 1):
 #         print(" ", end=" ")
 #     for k in range(2 * i + 1):
 #         print("*", end=" ")
 #     print()
 
 # Решение через цикл while
+row: int = 1
 
-row = 1
-while row <= 4:
-    space = 4 - row
-    while space > 0:
+while row <= number:
+    spaces = number - row
+    i = 1
+    while i <= spaces:
         print(" ", end=" ")
-        space -= 1
-    star = (2 * row) - 1
-    while star > 0:
+        i += 1
+    i = 1
+    while i <= 2 * row - 1:
         print("*", end=" ")
-        star -= 1
+        i += 1
     print()
     row += 1
