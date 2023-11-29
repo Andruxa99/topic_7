@@ -1,16 +1,15 @@
-# Решение через цикл for
 number: int = int(input("Введите целое положительное число: "))
-#
-# for i in range(number):
-#     for j in range(number - i - 1):
-#         print(" ", end=" ")
-#     for k in range(2 * i + 1):
-#         print("*", end=" ")
-#     print()
+
+# Решение через цикл for
+for i in range(number):
+    for j in range(number - i - 1):
+        print(" ", end=" ")
+    for k in range(2 * i + 1):
+        print("*", end=" ")
+    print()
 
 # Решение через цикл while
 row: int = 1
-
 while row <= number:
     spaces = number - row
     i = 1
